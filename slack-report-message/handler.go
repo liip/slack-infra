@@ -75,7 +75,7 @@ func (h *handler) handleReportMessage(interaction slackInteraction, rw http.Resp
 	textArea := slack.TextArea{
 		Name:  "message",
 		Label: "Why are you reporting this message?",
-		Hint:  "The report will be send to public channel #iso-audit-log. In case of issues with confidential information please contact the ISR or more approriate roles directly.",
+		Hint:  "A report will be sent to the public #iso-audit-log channel. In cases of confidential nature, please reach out to the ISR or other roles directly.",
 	}
 	selectElement := slack.SelectElement{
 		Name:  "anonymous",
